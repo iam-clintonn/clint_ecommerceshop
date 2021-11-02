@@ -7,8 +7,6 @@ import Home from './app/screens/Home';
 import ProductDetails from './app/screens/ProductDetails';
 import Cart from './app/screens/Cart'; 
 
-
-
 export default function App() {
   const Stack = createStackNavigator();
 
