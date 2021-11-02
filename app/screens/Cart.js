@@ -1,16 +1,15 @@
-import React from 'react'
-import { StyleSheet, Text, View } from 'react-native'
-import { SafeAreaView } from 'react-native-safe-area-context'
+import React from "react";
+import { StyleSheet, Text, View } from "react-native";
+import { SafeAreaView } from "react-native-safe-area-context";
 
 const Cart = () => {
-    return (
-        <SafeAreaView >
-            <Text> Cart Page </Text>
+  return (
+    <SafeAreaView>
+      <Text> Cart Page </Text>
+    </SafeAreaView>
+  );
+};
 
-        </SafeAreaView>
-    )
-}
+export default Cart;
 
-export default Cart
-
-const styles = StyleSheet.create({})
+const styles = StyleSheet.create({});

@@ -1,15 +1,15 @@
-import React from 'react'
-import { StyleSheet, Text, View } from 'react-native'
-import { SafeAreaView } from 'react-native-safe-area-context'
+import React from "react";
+import { StyleSheet, Text, View } from "react-native";
+import { SafeAreaView } from "react-native-safe-area-context";
 
-const ProductDetails = () => {
-    return (
-        <SafeAreaView>
-            <Text> Products Screen Pages </Text>
-        </SafeAreaView>
-    )
-}
+const ProductDetails = ({ route, navigation }) => {
+  const { title, price, image } = route.params;
 
-export default ProductDetails
+  return (
+    <SafeAreaView>
+      <Text>{title}</Text>
+    </SafeAreaView>
+  );
+};
 
-const styles = StyleSheet.create({})
+export default ProductDetails;
