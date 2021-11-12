@@ -38,7 +38,9 @@ const Home = ({ navigation }) => {
         </TouchableOpacity>
       </View>
       <View style={styles.secondContainer}>
-        <Text style={{ fontSize: 30, letterSpacing: 2 }}>Groceries</Text>
+        <Text style={{ fontSize: 30, letterSpacing: 2, marginBottom: 5 }}>
+          Groceries
+        </Text>
       </View>
       <View style={styles.thirdContainer}>
         <TouchableOpacity style={styles.tab}>
@@ -46,6 +48,9 @@ const Home = ({ navigation }) => {
         </TouchableOpacity>
         <TouchableOpacity style={styles.tab}>
           <Text style={styles.tabText}>Vegetables</Text>
+        </TouchableOpacity>
+        <TouchableOpacity style={styles.tab}>
+          <Text style={styles.tabText}>Cocktails</Text>
         </TouchableOpacity>
         <TouchableOpacity style={styles.tab}>
           <Text style={styles.tabText}>Others</Text>

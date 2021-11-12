@@ -80,7 +80,10 @@ const Login = ({ navigation }) => {
         <Text style={{ color: "#fff", fontSize: 18 }}>Login</Text>
       </TouchableOpacity>
       <TouchableOpacity>
-        <Text style={{ fontSize: 12 }}> Don't Have An Account ? Signup </Text>
+        <Text style={{ fontSize: 12, textDecorationLine: "underline" }}>
+          {" "}
+          Don't Have An Account ? Signup{" "}
+        </Text>
       </TouchableOpacity>
     </SafeAreaView>
   );
