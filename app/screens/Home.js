@@ -4,7 +4,6 @@ import {
   Text,
   View,
   TouchableOpacity,
-  TouchableHighlight,
   ScrollView,
   TextInput,
 } from "react-native";
@@ -18,10 +17,24 @@ const Home = ({ navigation }) => {
   const [products, setProducts] = useState();
 
   useEffect(() => {
+    const options = {
+      method: "GET",
+      url: "https://edamam-food-and-grocery-database.p.rapidapi.com/parser",
+      params: { ingr: "apple" },
+      headers: {
+        "x-rapidapi-host": "edamam-food-and-grocery-database.p.rapidapi.com",
+        "x-rapidapi-key": "8bbaeaa3d0mshfbe5d03c2434101p1edad5jsnfbac80fe0adc",
+      },
+    };
+
     axios
-      .get("https://fakestoreapi.com/products")
-      .then((data) => setProducts(data.data))
-      .catch((err) => alert(err.message));
+      .request(options)
+      .then((data) => {
+        setProducts(data.data.hints);
+      })
+      .catch((error) => {
+        console.error(error);
+      });
   }, []);
 
   return (
@@ -56,7 +69,19 @@ const Home = ({ navigation }) => {
           <Text style={styles.tabText}>Others</Text>
         </TouchableOpacity>
       </View>
-      <ScrollView style={styles.scrollViewer}></ScrollView>
+      <ScrollView style={styles.scrollViewer}>
+        {products &&
+          products.map(({ food }) => (
+            <Product
+              switchPage={() =>
+                navigation.navigate("ProductDetails", { ...food })
+              }
+              key={food.foodId}
+              label={food.label}
+              image={food.image}
+            />
+          ))}
+      </ScrollView>
       <View style={styles.bottomContainer}></View>
     </SafeAreaView>
   );
