@@ -7,13 +7,11 @@ const Product = ({ label, image, category, switchPage }) => {
       <Text style={{ backgroundColor: "white", flex: 1 }}>{label}</Text>
       <Image
         style={{
-          width: 250,
-          height: 160,
+          width: 360,
+          height: 250,
           marginBottom: 10,
           marginTop: 10,
           borderRadius: 20,
-
-          alignItems: "left",
         }}
         source={{ uri: image }}
       />

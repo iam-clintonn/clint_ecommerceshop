@@ -20,7 +20,7 @@ const Home = ({ navigation }) => {
     const options = {
       method: "GET",
       url: "https://edamam-food-and-grocery-database.p.rapidapi.com/parser",
-      params: { ingr: "apple" },
+      params: { ingr: "apple, banana" },
       headers: {
         "x-rapidapi-host": "edamam-food-and-grocery-database.p.rapidapi.com",
         "x-rapidapi-key": "8bbaeaa3d0mshfbe5d03c2434101p1edad5jsnfbac80fe0adc",
