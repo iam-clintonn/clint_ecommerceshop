@@ -123,7 +123,7 @@ const styles = StyleSheet.create({
     fontSize: 18,
   },
   scrollViewer: {
-    flexBasis: "50%",
+    flexBasis: "150%",
     backgroundColor: "red",
   },
   bottomContainer: {
