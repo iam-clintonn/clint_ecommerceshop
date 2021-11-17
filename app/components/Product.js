@@ -12,6 +12,7 @@ const Product = ({ label, image, category, switchPage }) => {
           marginBottom: 10,
           marginTop: 10,
           borderRadius: 20,
+          paddingBottom: 50,
         }}
         source={{ uri: image }}
       />
