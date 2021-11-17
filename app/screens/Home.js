@@ -124,7 +124,7 @@ const styles = StyleSheet.create({
   },
   scrollViewer: {
     flexBasis: "150%",
-    backgroundColor: "red",
+    backgroundColor: "lightyellow",
   },
   bottomContainer: {
     flex: 1,

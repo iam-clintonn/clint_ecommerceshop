@@ -4,8 +4,12 @@ import { SafeAreaView } from "react-native-safe-area-context";
 
 const Cart = () => {
   return (
-    <SafeAreaView>
-      <Text> Cart Page </Text>
+    <SafeAreaView style={{ flex: 1, paddingHorizontal: 20 }}>
+      <View>
+        <Text style={{ justifyContent: "center", alignItems: "center" }}>
+          Cart Page
+        </Text>
+      </View>
     </SafeAreaView>
   );
 };

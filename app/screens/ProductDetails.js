@@ -75,13 +75,14 @@ const ProductDetails = ({ route, navigation }) => {
               fontSize: 18,
             }}
           >
-            GHC 20
+            GHC 20.00
           </Text>
         </View>
         <View
           style={{ flex: 1, justifyContent: "center", alignItems: "center" }}
         >
           <TouchableOpacity
+            onPress={() => navigation.navigate("Cart")}
             style={{
               backgroundColor: "lightblue",
               padding: 10,

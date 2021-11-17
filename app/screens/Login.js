@@ -17,7 +17,7 @@ const Login = ({ navigation }) => {
   return (
     <SafeAreaView
       style={{
-        backgroundColor: "#ADD8E5",
+        backgroundColor: "#ADD8E6",
         flex: 1,
         justifyContent: "center",
         alignItems: "center",
